@@ -33,9 +33,11 @@ public class Register_Page {
     }
 
     public String getMessage() {
-    	return msg.getText();
-    	}
+        return msg.getText();
     }
+    
+    
+}
         
 
 

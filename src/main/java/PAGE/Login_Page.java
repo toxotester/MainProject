@@ -11,14 +11,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login_Page {
 	 WebDriver driver;
-	 WebDriverWait wait;
+	    WebDriverWait wait;
 
-	 @FindBy(id = "Email") WebElement email;
-	 @FindBy(id = "Password") WebElement password;
-	 @FindBy(css = "input.login-button") WebElement loginBtn;
-	 @FindBy(className = "account") WebElement account;
+	    @FindBy(id = "Email") WebElement email;
+	    @FindBy(id = "Password") WebElement password;
+	    @FindBy(css = "input.login-button") WebElement loginBtn;
+	    @FindBy(className = "account") WebElement account;
 
-	 public Login_Page(WebDriver driver) {
+	    public Login_Page(WebDriver driver) {
 	        this.driver = driver;
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	        PageFactory.initElements(driver, this);

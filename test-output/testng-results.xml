@@ -1,306 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="4" failed="4" skipped="1">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-11T13:12:06 IST" name="Default suite" finished-at="2026-04-11T13:12:43 IST" duration-ms="37141">
+  <suite started-at="2026-06-23T19:56:44 IST" name="Default suite" finished-at="2026-06-23T19:57:12 IST" duration-ms="27738">
     <groups>
     </groups>
-    <test started-at="2026-04-11T13:12:06 IST" name="Default test" finished-at="2026-04-11T13:12:43 IST" duration-ms="37141">
+    <test started-at="2026-06-23T19:56:44 IST" name="Default test" finished-at="2026-06-23T19:57:12 IST" duration-ms="27738">
       <class name="Demo_WebShop_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:06 IST" name="setup" finished-at="2026-04-11T13:12:07 IST" duration-ms="1717" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:44 IST" name="setup" finished-at="2026-06-23T19:56:46 IST" duration-ms="1757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:08 IST" name="launchUrl" finished-at="2026-04-11T13:12:10 IST" duration-ms="2288" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:46 IST" name="launchUrl" finished-at="2026-06-23T19:56:49 IST" duration-ms="2881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="registerTest()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:10 IST" name="registerTest" finished-at="2026-04-11T13:12:12 IST" duration-ms="2162" status="PASS">
+        <test-method signature="registerTest()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:49 IST" name="registerTest" finished-at="2026-06-23T19:56:51 IST" duration-ms="2170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:12 IST" name="launchUrl" finished-at="2026-04-11T13:12:12 IST" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:51 IST" name="launchUrl" finished-at="2026-06-23T19:56:52 IST" duration-ms="458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="loginTest()[pri:1, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:12 IST" name="loginTest" finished-at="2026-04-11T13:12:14 IST" depends-on-methods="Demo_WebShop_Test.registerTest" duration-ms="1955" status="PASS">
+        <test-method signature="loginTest()[pri:1, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:52 IST" name="loginTest" finished-at="2026-06-23T19:56:54 IST" depends-on-methods="Demo_WebShop_Test.registerTest" duration-ms="2565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:14 IST" name="launchUrl" finished-at="2026-04-11T13:12:15 IST" duration-ms="430" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:54 IST" name="launchUrl" finished-at="2026-06-23T19:56:55 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="booksTest()[pri:2, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:15 IST" name="booksTest" finished-at="2026-04-11T13:12:18 IST" depends-on-methods="Demo_WebShop_Test.loginTest" duration-ms="2787" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[❌ Book not added expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Book not added expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at Demo_WebShop_Test.booksTest(Demo_WebShop_Test.java:56)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="booksTest()[pri:2, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:55 IST" name="booksTest" finished-at="2026-06-23T19:56:59 IST" depends-on-methods="Demo_WebShop_Test.loginTest" duration-ms="4228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- booksTest -->
-        <test-method signature="cartTest()[pri:3, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:18 IST" name="cartTest" finished-at="2026-04-11T13:12:18 IST" depends-on-methods="Demo_WebShop_Test.booksTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Demo_WebShop_Test.cartTest() on instance Demo_WebShop_Test@23348b5d depends on not successfully finished methods 
-[Demo_WebShop_Test.booksTest() on instance Demo_WebShop_Test@23348b5d]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Demo_WebShop_Test.cartTest() on instance Demo_WebShop_Test@23348b5d depends on not successfully finished methods 
-[Demo_WebShop_Test.booksTest() on instance Demo_WebShop_Test@23348b5d]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:59 IST" name="launchUrl" finished-at="2026-06-23T19:56:59 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="cartTest()[pri:3, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:56:59 IST" name="cartTest" finished-at="2026-06-23T19:57:00 IST" duration-ms="736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:18 IST" name="launchUrl" finished-at="2026-04-11T13:12:18 IST" duration-ms="446" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:00 IST" name="launchUrl" finished-at="2026-06-23T19:57:01 IST" duration-ms="591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="navigationTest()[pri:4, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:18 IST" name="navigationTest" finished-at="2026-04-11T13:12:19 IST" duration-ms="596" status="PASS">
+        <test-method signature="navigationTest()[pri:4, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:01 IST" name="navigationTest" finished-at="2026-06-23T19:57:01 IST" duration-ms="715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigationTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:19 IST" name="launchUrl" finished-at="2026-04-11T13:12:19 IST" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:01 IST" name="launchUrl" finished-at="2026-06-23T19:57:02 IST" duration-ms="461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="logoutTest()[pri:5, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:19 IST" name="logoutTest" finished-at="2026-04-11T13:12:20 IST" duration-ms="1160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:20 IST" name="launchUrl" finished-at="2026-04-11T13:12:21 IST" duration-ms="421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchUrl -->
-        <test-method signature="computersTest()[pri:6, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:21 IST" name="computersTest" finished-at="2026-04-11T13:12:34 IST" duration-ms="13600" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-1"}
-  (Session info: chrome=146.0.7680.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c87757e481fa10ee91dfd3c7629c7b7a, findElement {value=add-to-cart-button-1, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\prave\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60566}, goog:processID: 23956, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60566/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c87757e481fa10ee91dfd3c7629c7b7a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-1"}
-  (Session info: chrome=146.0.7680.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c87757e481fa10ee91dfd3c7629c7b7a, findElement {value=add-to-cart-button-1, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\prave\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60566}, goog:processID: 23956, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60566/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c87757e481fa10ee91dfd3c7629c7b7a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-at PAGE.Computers_Page.addProduct(Computers_Page.java:40)
-at Demo_WebShop_Test.computersTest(Demo_WebShop_Test.java:96)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- computersTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:34 IST" name="launchUrl" finished-at="2026-04-11T13:12:35 IST" duration-ms="410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchUrl -->
-        <test-method signature="electronicsTest()[pri:7, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:35 IST" name="electronicsTest" finished-at="2026-04-11T13:12:39 IST" duration-ms="4367" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[❌ Electronics not added expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Electronics not added expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at Demo_WebShop_Test.electronicsTest(Demo_WebShop_Test.java:111)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- electronicsTest -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:39 IST" name="launchUrl" finished-at="2026-04-11T13:12:40 IST" duration-ms="942" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchUrl -->
-        <test-method signature="jewelryTest()[pri:8, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:40 IST" name="jewelryTest" finished-at="2026-04-11T13:12:43 IST" duration-ms="2622" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[❌ Jewelry not added expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Jewelry not added expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at Demo_WebShop_Test.jewelryTest(Demo_WebShop_Test.java:124)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="jewelryTest()[pri:5, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:02 IST" name="jewelryTest" finished-at="2026-06-23T19:57:05 IST" duration-ms="3510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jewelryTest -->
-        <test-method is-config="true" signature="end()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:43 IST" name="end" finished-at="2026-04-11T13:12:43 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:05 IST" name="launchUrl" finished-at="2026-06-23T19:57:06 IST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="electronicsTest()[pri:6, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:06 IST" name="electronicsTest" finished-at="2026-06-23T19:57:10 IST" duration-ms="4270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- electronicsTest -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:10 IST" name="launchUrl" finished-at="2026-06-23T19:57:11 IST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="logoutTest()[pri:7, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:11 IST" name="logoutTest" finished-at="2026-06-23T19:57:12 IST" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="end()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:12 IST" name="end" finished-at="2026-06-23T19:57:12 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_WebShop_Test@23348b5d]" started-at="2026-04-11T13:12:43 IST" name="tearDown" finished-at="2026-04-11T13:12:43 IST" depends-on-methods="Demo_WebShop_Test.end" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Demo_WebShop_Test@2df3b89c]" started-at="2026-06-23T19:57:12 IST" name="tearDown" finished-at="2026-06-23T19:57:12 IST" depends-on-methods="Demo_WebShop_Test.end" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

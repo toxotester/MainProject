@@ -16,7 +16,9 @@ public class Jewelry_Page {
     @FindBy(id = "products-viewmode") WebElement view;
 
     @FindBy(linkText = "Black & White Diamond Heart") WebElement product;
-    @FindBy(id = "add-to-cart-button-14") WebElement addCart;
+   // @FindBy(id = "add-to-cart-button-14") WebElement addCart;
+    @FindBy(xpath = "(//input[@type='button' and @value='Add to cart'])[1]") WebElement addCart;
+    @FindBy(xpath = "//p[contains(text(),\"The product has been added to your\")]") WebElement prodConf;
 
     public Jewelry_Page(WebDriver driver) {
         this.driver = driver;
@@ -36,6 +38,8 @@ public class Jewelry_Page {
     public void addProduct() {
         product.click();
         addCart.click();
+        prodConf.click();
     }
+
 
 }

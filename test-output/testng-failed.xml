@@ -6,16 +6,10 @@
       <class name="Demo_WebShop_Test">
         <methods>
           <include name="end"/>
-          <include name="booksTest"/>
           <include name="computersTest"/>
-          <include name="cartTest"/>
-          <include name="loginTest"/>
-          <include name="jewelryTest"/>
-          <include name="registerTest"/>
           <include name="launchUrl"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="electronicsTest"/>
         </methods>
       </class> <!-- Demo_WebShop_Test -->
     </classes>
