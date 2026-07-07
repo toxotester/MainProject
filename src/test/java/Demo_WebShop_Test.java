@@ -1,20 +1,22 @@
-import java.sql.Driver;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import BASE.BASE;
 import PAGE.Books_Page;
 import PAGE.Cart_Page;
-import PAGE.Computers_Page;
+
 import PAGE.Electronics_Page;
 import PAGE.Jewelry_Page;
 import PAGE.Login_Page;
 import PAGE.Register_Page;
-import PAGE.WaitUtils;
+import listeners.ExtentListener;
+
+@Listeners(ExtentListener.class)
 
 public class Demo_WebShop_Test extends BASE{
 	
